@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversao do tipo de Dado</title>
+    <style>
+        body{
+            text-align: justify;
+        }
+
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            background: transparent;
+        }
+        
+        h2{
+            background: linear-gradient(to right, rgba(0, 0, 139, 0.5), rgba(0, 0, 255, 0.4));
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        h3{
+            font-family:'Courier New', Courier, monospace;
+            font-size: 0.97em;
+            text-align: justify;
+            margin-left: 10vw;
+        }
+
+        h1, h2{
+            width: 70vw;
+        }
+
+        p{
+            text-indent: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Conversao do tipos de Dado</h1>
+
+    <p>O comando prompt por defeito vem como String, então tudo que vamos escrever dentro de um Prompt 
+        <br> se mandarmos Adicionar ele não vai ser possivel isso ele vai juntar as duas partes mesmo se for um numero que digitar...</p>
+    <p>Então nos devemos fazer a conversao do tipo de Dados de String para number ou numeros mesmo</p>
+
+    <h2>Conversao</h2>
+    <p>Para converter um elemento nos devemos usar o comando a seguir: </p>
+    <h3>
+        Number.parseInt(n)
+    </h3>
+    <p>Notemos que temos o tipo de dado primeiro que vai ser Number.
+        <br> depois vamos ter o parse que vai dizer para converter para um determinado tipo... e em seguida que vem o tipo de dado que é int
+        <br> e depois entre parentes colocamos o nome da variável que queremos converter
+    </p>
+    <h2>Veremos alguns comandos em JavaScript</h2>
+    <h3>
+        var n1 = Number.parseInt(window.prompt('Digita um numero'))
+      <br>  var n2 = Number.parseInt(window.prompt('Digita outro numero'))
+      <br> var s = n1 + n2
+      <br> alert('Seu valor é ' + v)
+    </h3>
+    <p>Notemos que usamos o Number.parselInt(n) depois de igual para converter o numero para number do tipo inteiro antes de salvar</p>
+
+    <script>
+        
+        var n1 = Number.parseInt(window.prompt('Digita um numero'))
+        var n2 = Number.parseInt(window.prompt('Digita outro numero'))
+        var s = n1 + n2
+        window.alert('Seu valor é: ' + s)
+        
+    </script>
+</body>
+</html>

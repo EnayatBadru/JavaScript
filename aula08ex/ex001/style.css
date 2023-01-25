@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, skyblue, lightblue);
+}
+
+header{
+    text-align: center;
+    color: white;
+    margin: 35px 0px 30px 0px;
+    font-size: 2em;
+}
+
+main{
+    font-variant: small-caps;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+}
+
+div#msg{
+    text-align: center;
+}
+
+div#foto{
+    width: 50%;
+    margin: auto;
+}
+
+p#res{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin-top: 40px;
+    font-variant: normal;
+}

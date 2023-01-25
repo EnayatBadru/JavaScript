@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais que vive</title>
+</head>
+<body>
+    <h1>Escreva o nome do seu País a baixo</h1>
+
+    <input type="text" id="pais" placeholder="Digita seu País...">
+    <input type="submit" value="verificar" onclick="ver()">
+    <p id="res"></p>
+
+    <script> 
+    var tn1 = document.getElementById('pais')
+    var res = document.getElementById('res')
+    function ver(){
+        var pais = String(tn1.value)
+        if(pais == 'Mocambique'){
+            res.innerHTML = `Você é <strong>mocambicano!</strong>`
+        }else{
+            res.innerHTML = `Você é <strong>estrangeiro!</strong>`
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidade</title>
+</head>
+<body>
+    <h1>Teste de Velocidade</h1>
+
+    <input type="number" id="vel" placeholder="Digita a velocidade">
+    <input type="submit" onclick="sub()" value="verificar">
+    <p id="par"></p>
+    <p id="res"></p>
+
+    <script>
+        var tn1 = document.getElementById('vel')
+        var par = document.getElementById('par')
+        var res = document.getElementById('res')
+
+        function sub(){
+            var n1 = Number(tn1.value)
+            par.innerHTML = `A velocidade do seu carro foi de ${n1}km/h`
+        if(n1 > 60){
+            res.innerHTML = 'Você foi <strong>MULTADO</strong>'
+        }else{
+            res.innerHTML = 'Dirija com cinto de Segurança'
+        }
+        }
+    </script>
+</body>
+</html>

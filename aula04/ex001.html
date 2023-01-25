@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+    div{
+        background: skyblue;
+        color: #000;
+        width: 90vw;
+        margin: auto;
+    }
+
+    strong{
+        display: block;
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    h1{
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    h1, p{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 class="titulo">Introdução ao DOM</h1>
+        <p>
+            
+            Bom para começar nos devemos saber oque é o DOM,
+        <br>O DOM, significa Document Object Model, traduzindo para portugues sinifica Modelo de Objecto para Documentos.
+        <br>Vamos aprender a Árvore DOM aqui tambem...
+            
+        <p class="container__p2">
+            <strong>Selecionar</strong>
+            <br>Podemos selecionar em JavaScript por:
+            <br>Marca, Id, Nome, Classe.
+            <br>Existe uma nova forma de selecionar para ECMAScripts recentes que é seleção por Seletores.
+            <br>Exemplo: <br>
+            querySelector() ou tambem por querySelectorAll()
+            <br>O primeiro seleciona uma coisa e a segunda maneira seleciona tudo.
+        </p>
+    </div><!--container-->
+    <script>
+        var d = window.document.querySelector('p.container__p2')
+        d.style.background= 'yellow'
+    </script>
+</body>
+</html>
